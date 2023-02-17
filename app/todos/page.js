@@ -16,7 +16,7 @@ const page = async () => {
     <div className="px-[20px] flex flex-col">
       {todo.map((elem) => {
         return (
-          <Link href={`/todoId/${elem.id}`} className="block" key={elem.id}>
+          <Link href={`/todos/${elem.id}`} className="block" key={elem.id}>
             todo : {elem.id}
           </Link>
         );
