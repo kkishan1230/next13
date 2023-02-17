@@ -1,7 +1,9 @@
 import React from "react";
 const fetchData = async (todo) => {
   const res = await (
-    await fetch(`https://jsonplaceholder.typicode.com/todos/${todo}`)
+    await fetch(`https://jsonplaceholder.typicode.com/todos/${todo}`, {
+      cache: "no-cache",
+    })
   ).json();
   return res;
 };
